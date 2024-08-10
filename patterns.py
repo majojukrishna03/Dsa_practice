@@ -81,3 +81,22 @@ pattern5(5)
 print()
 print("----------------------------------")
 
+
+# Pattern 6
+'''
+1 2 3
+1 2
+1
+'''   
+
+def pattern6(n):
+    print("Pattern 6")
+    for i in range(n,0,-1):
+        for j in range(1,i+1):
+            print(j,end=" ")
+        print()
+
+
+pattern6(5)
+print()
+print("----------------------------------")
