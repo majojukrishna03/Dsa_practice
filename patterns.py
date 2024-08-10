@@ -64,3 +64,20 @@ pattern4(5)
 print()
 print("----------------------------------")
 
+# Pattern 5
+'''
+* * *
+* *
+*
+'''   
+
+def pattern5(n):
+    print("Pattern 5")
+    for i in range(n,0,-1):
+        print("* "*i)
+
+
+pattern5(5)
+print()
+print("----------------------------------")
+
