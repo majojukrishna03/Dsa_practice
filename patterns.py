@@ -264,3 +264,22 @@ def pattern15(n):
 pattern15(5)
 print()
 print("----------------------------------")
+
+# Pattern 16
+'''
+A
+B B
+C C C
+'''
+def pattern16(n):
+    print("Pattern 16")
+    A=65
+    for i in range(n):
+        for i in range(i+1):
+            print(chr(A),end=" ")
+        print()
+        A+=1
+
+pattern16(5)
+print()
+print("----------------------------------")
