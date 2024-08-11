@@ -227,4 +227,22 @@ pattern13(5)
 print()
 print("----------------------------------")
 
+# Pattern 14
+'''
+A
+A B
+A B C
+'''
+def pattern14(n):
+    print("Pattern 14")
+    for i in range(n):
+        A=65
+        for i in range(i+1):
+            print(chr(A),end=" ")
+            A+=1
+        print()
+
+pattern14(5)
+print()
+print("----------------------------------")
 
