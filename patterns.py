@@ -170,7 +170,20 @@ pattern10(5)
 print()
 print("----------------------------------")
 
+# Pattern 11
+'''
+1
+0 1
+1 0 1
+'''
+def pattern11(n):
+    print("Pattern 11")
+    for i in range(n):
+        for j in range(i+1):
+            print((i+j+1)%2,end=" ")
+        print()
 
-
-
+pattern11(5)
+print()
+print("----------------------------------")
 
