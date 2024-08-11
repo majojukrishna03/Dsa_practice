@@ -131,3 +131,25 @@ pattern8(5)
 print()
 print("----------------------------------")
 
+# Pattern 9
+'''
+  *
+ ***
+*****
+*****
+ ***
+  *
+'''
+def pattern9(n):
+    print("Pattern 9")
+    for i in range(n):
+        print(" "*(n-i-1)+"*"*(i*2+1)+" "*(n-i-1))
+    for i in range(n,0,-1):
+        print(" "*(n-i) +"*"*(2*i-1))
+
+pattern9(5)
+print()
+print("----------------------------------")
+
+
+
