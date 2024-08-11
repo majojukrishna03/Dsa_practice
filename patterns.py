@@ -100,3 +100,18 @@ def pattern6(n):
 pattern6(5)
 print()
 print("----------------------------------")
+
+# Pattern 7
+'''
+  *
+ ***
+*****
+'''   
+def pattern7(n):
+    print("Pattern 7")
+    for i in range(n):
+        print(" "*(n-i-1)+"*"*((i*2)+1)+" "*(n-i-1))
+
+pattern7(5)
+print()
+print("----------------------------------")
