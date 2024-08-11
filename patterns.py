@@ -246,3 +246,21 @@ pattern14(5)
 print()
 print("----------------------------------")
 
+# Pattern 15
+'''
+A B C
+A B
+A
+'''
+def pattern15(n):
+    print("Pattern 15")
+    for i in range(n,0,-1):
+        A=65
+        for i in range(i):
+            print(chr(A),end=" ")
+            A+=1
+        print()
+
+pattern15(5)
+print()
+print("----------------------------------")
