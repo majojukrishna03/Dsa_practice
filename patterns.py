@@ -115,3 +115,19 @@ def pattern7(n):
 pattern7(5)
 print()
 print("----------------------------------")
+
+# Pattern 8
+'''
+*****
+ ***
+  *
+'''   
+def pattern8(n):
+    print("Pattern 8")
+    for i in range(n,0,-1):
+        print(" "*(n-i) +"*"*(2*i-1))
+
+pattern8(5)
+print()
+print("----------------------------------")
+
