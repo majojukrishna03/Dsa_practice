@@ -309,3 +309,23 @@ def pattern17(n):
 pattern17(5)
 print()
 print("----------------------------------")
+
+# Pattern 18
+'''
+C
+C B
+C B A
+'''
+def pattern18(n):
+    # Write your solution here.
+    a=65
+    start = a+n-1
+    for i in range(1,n+1):
+        for j in range(i):
+            print(chr(start-j),end=" ")
+        print()
+
+
+pattern18(5)
+print()
+print("----------------------------------")
