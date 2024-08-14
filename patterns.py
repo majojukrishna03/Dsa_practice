@@ -283,3 +283,29 @@ def pattern16(n):
 pattern16(5)
 print()
 print("----------------------------------")
+
+# Pattern 17
+'''
+    A
+  A B A
+A B C B A
+'''
+def pattern17(n):
+    a = 65  # ASCII value of 'A'
+    for i in range(1, n + 1):
+        # Calculate leading spaces
+        spaces = ' ' * (n - i)
+        
+        # Generate the pattern for the current row
+        pattern = [chr(a + j) for j in range(i)]  # Increasing sequence
+        pattern += [chr(a + j) for j in range(i - 2, -1, -1)]  # Decreasing sequence
+        
+        # Join the pattern list into a string with spaces
+        line = ' '.join(pattern)
+        
+        # Print the line with leading spaces
+        print(spaces + line)
+
+pattern17(5)
+print()
+print("----------------------------------")
