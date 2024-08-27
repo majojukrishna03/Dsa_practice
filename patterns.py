@@ -329,3 +329,44 @@ def pattern18(n):
 pattern18(5)
 print()
 print("----------------------------------")
+
+# pattern 19
+'''
+1 2 3 4 5 
+2 3 4 5 1 
+3 4 5 1 2 
+4 5 1 2 3 
+5 1 2 3 4
+'''
+
+def pattern19(n):
+    for i in range(1,n+1):
+        for j in range(i,i+5):
+            if (j%5 !=0) :
+                print(j%5, end=" ")
+            else:
+                print(5,end=" ")
+        print()
+
+pattern19(5)
+print()
+print("----------------------------------")
+
+# pattern20
+'''
+    1
+   21
+  321
+ 4321
+54321
+'''
+
+def pattern20(n):
+    for i in range(1,n+1):
+        print(" " * (5-i),end="")
+        for j in range(i,0,-1):
+            print(j,end="")
+        print()
+
+pattern20(5)
+
